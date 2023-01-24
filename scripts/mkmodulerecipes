@@ -74,9 +74,9 @@ inherit oatpp-module
 
 EOF
     if [ "$#" -gt 2 ]; then
-        echo "DEPENDS_append = \" $3\"" >> $RECIPE
+        echo "DEPENDS:append = \" $3\"" >> $RECIPE
     fi
-    echo "RDEPENDS_\${PN} += \"$2\"" >> $PKGGROUP
+    echo "RDEPENDS:\${PN} += \"$2\"" >> $PKGGROUP
 
 }
 
@@ -98,11 +98,11 @@ generate_recipe Protobuf protobuf "protobuf"
 # Swagger does need a little more for its resources
 generate_recipe "Swagger (OAS 3.0)" swagger
 cat << EOF >> "$RECIPES/oatpp-swagger/oatpp-swagger_$VERSION.bb"
-PACKAGES_prepend = "\${PN}-ui "
+PACKAGES:prepend = "\${PN}-ui "
 
 INCDIR = "\${includedir}/oatpp-\${PV}/\${PN}/\${PN}"
 CMDIR = "\${libdir}/cmake/\${PN}-\${PV}"
-FILES_\${PN} = " \\
+FILES:\${PN} = " \\
     \${INCDIR}/AsyncController.hpp \\
     \${INCDIR}/Controller.hpp \\
     \${INCDIR}/Generator.hpp \\
@@ -116,7 +116,7 @@ FILES_\${PN} = " \\
     \${CMDIR}/oatpp-swaggerTargets-noconfig.cmake \\
 "
 RESDIR = "\${includedir}/oatpp-\${PV}/bin/oatpp-swagger/res"
-FILES_\${PN}-ui = " \\
+FILES:\${PN}-ui = " \\
     \${RESDIR}/swagger-ui.js.map \\
     \${RESDIR}/swagger-ui-standalone-preset.js \\
     \${RESDIR}/swagger-ui.css \\

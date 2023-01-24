@@ -31,7 +31,7 @@ DEPENDS = "oatpp"
 SRC_URI = "git://github.com/oatpp/${PN};protocol=https;tag=${PV}"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=86d3f3a95c324c9479bd8986968f4327"
 
-ALLOW_EMPTY_${PN} = "1"
+ALLOW_EMPTY:${PN} = "1"
 
 S = "${WORKDIR}/git"
 
@@ -42,7 +42,7 @@ PACKAGECONFIG ??= ""
 PACKAGECONFIG[shared] = "-DBUILD_SHARED_LIBS=ON,-DBUILD_SHARED_LIBS=OFF"
 PACKAGECONFIG[tests] = "-DOATPP_BUILD_TESTS=ON,-DOATPP_BUILD_TESTS=OFF"
 
-FILES_${PN}-staticdev = " \
+FILES:${PN}-staticdev = " \
     ${libdir}/oatpp-${PV}/lib${PN}.a \ 
 "
 
