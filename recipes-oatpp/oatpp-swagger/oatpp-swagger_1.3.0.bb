@@ -25,6 +25,8 @@
 DESCRIPTION = "Oat++ Swagger (OAS 3.0)" 
 inherit oatpp-module
 
+SRCREV = "b0bf4c0e71ed77e3e52040f0da30032de56b7840"
+
 PACKAGES:prepend = "${PN}-ui "
 
 INCDIR = "${includedir}/oatpp-${PV}/${PN}/${PN}"
