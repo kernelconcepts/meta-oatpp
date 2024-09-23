@@ -25,3 +25,4 @@
 DESCRIPTION = "Oat++ SSDP" 
 inherit oatpp-module
 
+SRCREV = "${PV}"
