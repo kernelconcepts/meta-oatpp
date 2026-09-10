@@ -25,6 +25,6 @@
 DESCRIPTION = "Oat++ MongoDB" 
 inherit oatpp-module
 
-SRCREV = "1.3.0-latest"
+SRCREV = "0bc5e161c0deb4a58f7b9174fa1147cc4c256fc1"
 
 DEPENDS:append = " mongodb"

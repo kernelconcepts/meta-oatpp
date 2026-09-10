@@ -25,4 +25,4 @@
 DESCRIPTION = "Oat++ Websocket" 
 inherit oatpp-module
 
-SRCREV = "${PV}"
+SRCREV = "36c3ceaf4706e54390d020390081203fa2cc693c"
