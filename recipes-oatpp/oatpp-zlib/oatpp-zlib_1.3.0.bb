@@ -25,6 +25,6 @@
 DESCRIPTION = "Oat++ zlib" 
 inherit oatpp-module
 
-SRCREV = "1.3.0-latest"
+SRCREV = "33a831eb42c9f56e6cd941ad23c3f7b6b2a1d8d7"
 
 DEPENDS:append = " zlib"

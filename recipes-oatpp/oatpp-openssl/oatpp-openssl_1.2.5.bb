@@ -25,6 +25,6 @@
 DESCRIPTION = "Oat++ OpenSSL" 
 inherit oatpp-module
 
-SRCREV = "${PV}"
+SRCREV = "b45f755345330f728cae1d0d3eaa225bbff32dd2"
 
 DEPENDS:append = " openssl"

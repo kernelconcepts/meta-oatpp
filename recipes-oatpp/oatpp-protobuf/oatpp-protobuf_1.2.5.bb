@@ -25,6 +25,6 @@
 DESCRIPTION = "Oat++ Protobuf" 
 inherit oatpp-module
 
-SRCREV = "${AUTOREV}"
+SRCREV = "71b26be6c0028758dc61b4ce94bfd51e353a53f3"
 
 DEPENDS:append = " protobuf"

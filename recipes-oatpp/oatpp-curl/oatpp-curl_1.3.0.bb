@@ -25,6 +25,6 @@
 DESCRIPTION = "Oat++ Curl" 
 inherit oatpp-module
 
-SRCREV = "1.3.0-latest"
+SRCREV = "779b8b3a632d006ec7395fc570f1e1e14edcc595"
 
 DEPENDS:append = " curl"

@@ -25,6 +25,6 @@
 DESCRIPTION = "Oat++ MbedTLS" 
 inherit oatpp-module
 
-SRCREV = "1.3.0-latest"
+SRCREV = "1077a280efbf7a404b7629e49e4370c620940725"
 
 DEPENDS:append = " mbedtls"
